@@ -1,0 +1,152 @@
+{
+  "resource": "/customers",
+  "path": "/customers",
+  "httpMethod": "POST",
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept-Language": "en-US,en;q=0.5",
+    "CloudFront-Forwarded-Proto": "https",
+    "CloudFront-Is-Desktop-Viewer": "true",
+    "CloudFront-Is-Mobile-Viewer": "false",
+    "CloudFront-Is-SmartTV-Viewer": "false",
+    "CloudFront-Is-Tablet-Viewer": "false",
+    "CloudFront-Viewer-Country": "CA",
+    "content-type": "application/json;charset=utf-8",
+    "Host": "5qdqabzz9b.execute-api.ca-central-1.amazonaws.com",
+    "origin": "http://localhost:3000",
+    "Referer": "http://localhost:3000/new_customer",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:82.0) Gecko/20100101 Firefox/82.0",
+    "Via": "2.0 7514e5e25722778fd4b1744d4ecc67e1.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Id": "3M3grgMqnXpeDHfpCmDgxzRofAi1ovIHZyFl9IxNgaLge8kUuSMDPQ==",
+    "X-Amzn-Trace-Id": "Root=1-5f9c6ed5-324cd8974e27faad15d82d23",
+    "X-Forwarded-For": "24.84.254.36, 64.252.140.142",
+    "X-Forwarded-Port": "443",
+    "X-Forwarded-Proto": "https"
+  },
+  "multiValueHeaders": {
+    "Accept": [
+      "application/json, text/plain, */*"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, br"
+    ],
+    "Accept-Language": [
+      "en-US,en;q=0.5"
+    ],
+    "CloudFront-Forwarded-Proto": [
+      "https"
+    ],
+    "CloudFront-Is-Desktop-Viewer": [
+      "true"
+    ],
+    "CloudFront-Is-Mobile-Viewer": [
+      "false"
+    ],
+    "CloudFront-Is-SmartTV-Viewer": [
+      "false"
+    ],
+    "CloudFront-Is-Tablet-Viewer": [
+      "false"
+    ],
+    "CloudFront-Viewer-Country": [
+      "CA"
+    ],
+    "content-type": [
+      "application/json;charset=utf-8"
+    ],
+    "Host": [
+      "5qdqabzz9b.execute-api.ca-central-1.amazonaws.com"
+    ],
+    "origin": [
+      "http://localhost:3000"
+    ],
+    "Referer": [
+      "http://localhost:3000/new_customer"
+    ],
+    "User-Agent": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:82.0) Gecko/20100101 Firefox/82.0"
+    ],
+    "Via": [
+      "2.0 7514e5e25722778fd4b1744d4ecc67e1.cloudfront.net (CloudFront)"
+    ],
+    "X-Amz-Cf-Id": [
+      "3M3grgMqnXpeDHfpCmDgxzRofAi1ovIHZyFl9IxNgaLge8kUuSMDPQ=="
+    ],
+    "X-Amzn-Trace-Id": [
+      "Root=1-5f9c6ed5-324cd8974e27faad15d82d23"
+    ],
+    "X-Forwarded-For": [
+      "24.84.254.36, 64.252.140.142"
+    ],
+    "X-Forwarded-Port": [
+      "443"
+    ],
+    "X-Forwarded-Proto": [
+      "https"
+    ]
+  },
+  "queryStringParameters": null,
+  "multiValueQueryStringParameters": null,
+  "pathParameters": null,
+  "stageVariables": null,
+  "requestContext": {
+    "resourceId": "qf95sn",
+    "resourcePath": "/customers",
+    "httpMethod": "POST",
+    "extendedRequestId": "VPZBVG3R4osFovw=",
+    "requestTime": "30/Oct/2020:19:51:49 +0000",
+    "path": "/dev/customers",
+    "accountId": "276521916530",
+    "protocol": "HTTP/1.1",
+    "stage": "dev",
+    "domainPrefix": "5qdqabzz9b",
+    "requestTimeEpoch": 1604087509219,
+    "requestId": "ee5ee5fd-3b44-4b09-9a9b-2c4ae34c3109",
+    "identity": {
+      "cognitoIdentityPoolId": null,
+      "accountId": null,
+      "cognitoIdentityId": null,
+      "caller": null,
+      "sourceIp": "24.84.254.36",
+      "principalOrgId": null,
+      "accessKey": null,
+      "cognitoAuthenticationType": null,
+      "cognitoAuthenticationProvider": null,
+      "userArn": null,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:82.0) Gecko/20100101 Firefox/82.0",
+      "user": null
+    },
+    "domainName": "5qdqabzz9b.execute-api.ca-central-1.amazonaws.com",
+    "apiId": "5qdqabzz9b"
+  },
+  "body": {
+    "org_name": "BCIT",
+    "cus_status": "On-Boarding",
+    "ship_address": {
+      "Address": "455 Sussex Ave",
+      "City": "Langley",
+      "prov": "BC",
+      "post_code": "V5A3C6",
+      "country": "Canada"
+    },
+    "pref_des": "/img/des1.jpg",
+    "contact_person": {
+      "name": "William",
+      "email": "william@bcit.ca",
+      "phone": "778-899-5896"
+    },
+    "sales_contact": {
+      "name": "Frank",
+      "email": "frank@buitlspace.ca",
+      "phone": "778-899-5896"
+    },
+    "partner_id": "1000",
+    "partner_contact": {
+      "name": "Sue",
+      "email": "sue@partner.ca",
+      "phone": "555-555-5555"
+    }
+  },
+  "isBase64Encoded": false
+}

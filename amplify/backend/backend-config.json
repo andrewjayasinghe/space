@@ -1,0 +1,345 @@
+{
+    "function": {
+        "qrv1Lambda": {
+            "build": true,
+            "providerPlugin": "awscloudformation",
+            "service": "Lambda",
+            "dependsOn": []
+        },
+        "createOrder": {
+            "build": true,
+            "providerPlugin": "awscloudformation",
+            "service": "Lambda",
+            "dependsOn": [
+                {
+                    "category": "function",
+                    "resourceName": "qrv1Lambda",
+                    "attributes": [
+                        "Name"
+                    ]
+                },
+                {
+                    "category": "api",
+                    "resourceName": "qrv1API",
+                    "attributes": [
+                        "ApiName",
+                        "ApiId"
+                    ]
+                }
+            ]
+        },
+        "createCustomer": {
+            "build": true,
+            "providerPlugin": "awscloudformation",
+            "service": "Lambda",
+            "dependsOn": [
+                {
+                    "category": "function",
+                    "resourceName": "qrv1Lambda",
+                    "attributes": [
+                        "Name"
+                    ]
+                },
+                {
+                    "category": "function",
+                    "resourceName": "createOrder",
+                    "attributes": [
+                        "Name"
+                    ]
+                },
+                {
+                    "category": "api",
+                    "resourceName": "qrv1API",
+                    "attributes": [
+                        "ApiName",
+                        "ApiId"
+                    ]
+                }
+            ]
+        },
+        "getCustomers": {
+            "build": true,
+            "providerPlugin": "awscloudformation",
+            "service": "Lambda",
+            "dependsOn": [
+                {
+                    "category": "function",
+                    "resourceName": "qrv1Lambda",
+                    "attributes": [
+                        "Name"
+                    ]
+                },
+                {
+                    "category": "function",
+                    "resourceName": "createOrder",
+                    "attributes": [
+                        "Name"
+                    ]
+                },
+                {
+                    "category": "function",
+                    "resourceName": "createCustomer",
+                    "attributes": [
+                        "Name"
+                    ]
+                },
+                {
+                    "category": "api",
+                    "resourceName": "qrv1API",
+                    "attributes": [
+                        "ApiName",
+                        "ApiId"
+                    ]
+                },
+                {
+                    "category": "storage",
+                    "resourceName": "customers",
+                    "attributes": [
+                        "Name",
+                        "Arn"
+                    ]
+                }
+            ]
+        },
+        "deleteCustomer": {
+            "build": true,
+            "providerPlugin": "awscloudformation",
+            "service": "Lambda",
+            "dependsOn": [
+                {
+                    "category": "function",
+                    "resourceName": "qrv1Lambda",
+                    "attributes": [
+                        "Name"
+                    ]
+                },
+                {
+                    "category": "function",
+                    "resourceName": "createOrder",
+                    "attributes": [
+                        "Name"
+                    ]
+                },
+                {
+                    "category": "function",
+                    "resourceName": "createCustomer",
+                    "attributes": [
+                        "Name"
+                    ]
+                },
+                {
+                    "category": "function",
+                    "resourceName": "getCustomers",
+                    "attributes": [
+                        "Name"
+                    ]
+                },
+                {
+                    "category": "api",
+                    "resourceName": "qrv1API",
+                    "attributes": [
+                        "ApiName",
+                        "ApiId"
+                    ]
+                },
+                {
+                    "category": "storage",
+                    "resourceName": "customers",
+                    "attributes": [
+                        "Name",
+                        "Arn"
+                    ]
+                }
+            ]
+        },
+        "getOrders": {
+            "build": true,
+            "providerPlugin": "awscloudformation",
+            "service": "Lambda",
+            "dependsOn": []
+        },
+        "getCustomer": {
+            "build": true,
+            "providerPlugin": "awscloudformation",
+            "service": "Lambda",
+            "dependsOn": [
+                {
+                    "category": "function",
+                    "resourceName": "qrv1Lambda",
+                    "attributes": [
+                        "Name"
+                    ]
+                },
+                {
+                    "category": "function",
+                    "resourceName": "createOrder",
+                    "attributes": [
+                        "Name"
+                    ]
+                },
+                {
+                    "category": "function",
+                    "resourceName": "createCustomer",
+                    "attributes": [
+                        "Name"
+                    ]
+                },
+                {
+                    "category": "function",
+                    "resourceName": "getCustomers",
+                    "attributes": [
+                        "Name"
+                    ]
+                },
+                {
+                    "category": "function",
+                    "resourceName": "deleteCustomer",
+                    "attributes": [
+                        "Name"
+                    ]
+                },
+                {
+                    "category": "function",
+                    "resourceName": "getOrders",
+                    "attributes": [
+                        "Name"
+                    ]
+                },
+                {
+                    "category": "api",
+                    "resourceName": "qrv1API",
+                    "attributes": [
+                        "ApiName",
+                        "ApiId"
+                    ]
+                },
+                {
+                    "category": "storage",
+                    "resourceName": "customers",
+                    "attributes": [
+                        "Name",
+                        "Arn"
+                    ]
+                }
+            ]
+        },
+        "updateCustomer": {
+            "build": true,
+            "providerPlugin": "awscloudformation",
+            "service": "Lambda",
+            "dependsOn": [
+                {
+                    "category": "function",
+                    "resourceName": "qrv1Lambda",
+                    "attributes": [
+                        "Name"
+                    ]
+                },
+                {
+                    "category": "function",
+                    "resourceName": "createOrder",
+                    "attributes": [
+                        "Name"
+                    ]
+                },
+                {
+                    "category": "function",
+                    "resourceName": "createCustomer",
+                    "attributes": [
+                        "Name"
+                    ]
+                },
+                {
+                    "category": "function",
+                    "resourceName": "getCustomers",
+                    "attributes": [
+                        "Name"
+                    ]
+                },
+                {
+                    "category": "function",
+                    "resourceName": "deleteCustomer",
+                    "attributes": [
+                        "Name"
+                    ]
+                },
+                {
+                    "category": "function",
+                    "resourceName": "getOrders",
+                    "attributes": [
+                        "Name"
+                    ]
+                },
+                {
+                    "category": "function",
+                    "resourceName": "getCustomer",
+                    "attributes": [
+                        "Name"
+                    ]
+                },
+                {
+                    "category": "api",
+                    "resourceName": "qrv1API",
+                    "attributes": [
+                        "ApiName",
+                        "ApiId"
+                    ]
+                },
+                {
+                    "category": "storage",
+                    "resourceName": "customers",
+                    "attributes": [
+                        "Name",
+                        "Arn"
+                    ]
+                }
+            ]
+        },
+        "updateOrder": {
+            "build": true,
+            "providerPlugin": "awscloudformation",
+            "service": "Lambda",
+            "dependsOn": []
+        }
+    },
+    "api": {
+        "qrv1API": {
+            "service": "API Gateway",
+            "providerPlugin": "awscloudformation",
+            "dependsOn": [
+                {
+                    "category": "function",
+                    "resourceName": "qrv1Lambda",
+                    "attributes": [
+                        "Name",
+                        "Arn"
+                    ]
+                }
+            ]
+        }
+    },
+    "hosting": {
+        "amplifyhosting": {
+            "service": "amplifyhosting",
+            "type": "cicd"
+        }
+    },
+    "storage": {
+        "customers": {
+            "service": "DynamoDB",
+            "providerPlugin": "awscloudformation"
+        },
+        "sysVars": {
+            "service": "DynamoDB",
+            "providerPlugin": "awscloudformation"
+        }
+    },
+    "auth": {
+        "qrv1d412f63e": {
+            "service": "Cognito",
+            "providerPlugin": "awscloudformation",
+            "dependsOn": [],
+            "customAuth": false
+        }
+    }
+}

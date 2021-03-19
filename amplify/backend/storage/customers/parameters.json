@@ -1,0 +1,5 @@
+{
+    "tableName": "customers",
+    "partitionKeyName": "customer_id",
+    "partitionKeyType": "N"
+}

@@ -1,0 +1,7 @@
+{
+    "tableName": "spaceOrders",
+    "partitionKeyName": "cust_idorder_id",
+    "partitionKeyType": "S",
+    "sortKeyName": "date_created",
+    "sortKeyType": "S"
+}

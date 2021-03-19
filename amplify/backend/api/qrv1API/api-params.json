@@ -1,0 +1,35 @@
+{
+    "paths": [
+        {
+            "name": "/orders",
+            "lambdaFunction": "qrv1Lambda",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/orders"
+        }
+    ],
+    "resourceName": "qrv1API",
+    "apiName": "qrv1API",
+    "functionArns": [
+        {
+            "lambdaFunction": "qrv1Lambda"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-qrv1-dev-130133-authRole",
+        "unAuthRoleName": "amplify-qrv1-dev-130133-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "qrv1Lambda",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

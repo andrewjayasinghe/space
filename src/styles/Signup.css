@@ -1,0 +1,31 @@
+.submitBtn{
+  left: 50%;
+  width: 90%;
+}
+.cancelBtn{
+  left: 50%;
+  width: 90%;
+}
+
+.cancelBtn:hover{
+  color: white !important;
+}
+
+.formContainer{
+  margin-top: 20px;
+}
+
+.formLabel{
+  margin-bottom: 50px;
+  margin-top: 0px;
+  font-weight: 1000 !important;
+}
+.registered {
+  margin-left: 20px;
+  border-bottom: 1px solid #00B060;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none !important;
+  color: inherit !important;
+}

@@ -1,0 +1,5 @@
+{
+    "tableName": "sysVars",
+    "partitionKeyName": "tableVars",
+    "partitionKeyType": "S"
+}

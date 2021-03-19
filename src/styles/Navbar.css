@@ -1,0 +1,35 @@
+.navbar_logo{
+    width: auto;
+    height: 60px;
+}
+
+li :hover{
+    background-color: #00a14b;
+    color: white !important;
+}
+
+li a{
+    border-radius: 10px;
+    border: 1px solid #00a14b;
+    margin: 4px;
+}
+
+li a:hover{
+    color: white !important;
+    
+}
+
+.navdiv{
+    border-bottom: medium !important;
+    border-color: #00a14b;
+}
+
+tbody tr:hover{
+    background-color: #00a14b !important;
+    color: white !important;
+}
+.nav-link{
+    text-align: center;
+    width: 100px;
+}
+

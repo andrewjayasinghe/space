@@ -1,0 +1,64 @@
+{
+  "permissions": {
+    "function": {
+      "qrv1Lambda": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ],
+      "createOrder": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ],
+      "createCustomer": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ],
+      "getCustomers": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ],
+      "deleteCustomer": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ],
+      "getOrders": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ],
+      "getCustomer": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ]
+    },
+    "api": {
+      "qrv1API": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ]
+    },
+    "storage": {
+      "customers": [
+        "create",
+        "read",
+        "update"
+      ]
+    }
+  },
+  "lambdaLayers": []
+}

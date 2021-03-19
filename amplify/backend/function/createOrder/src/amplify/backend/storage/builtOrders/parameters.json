@@ -1,0 +1,7 @@
+{
+    "tableName": "builtOrders",
+    "partitionKeyName": "order_id-cust_id",
+    "partitionKeyType": "S",
+    "sortKeyName": "date_created",
+    "sortKeyType": "S"
+}

@@ -1,0 +1,7 @@
+{
+    "tableName": "urls",
+    "partitionKeyName": "url",
+    "partitionKeyType": "S",
+    "sortKeyName": "cust_id",
+    "sortKeyType": "N"
+}
