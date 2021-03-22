@@ -12,7 +12,7 @@ function CreateOrder(props) {
 
     
 function createOrder(num_urls) {
-    axios.post(URL + '/orders', 
+    axios.post(URL + '/orders',  
       {
       customer_id: props.data[0].customer_id,
       num_urls: parseInt(num_urls),
